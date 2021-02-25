@@ -2,7 +2,7 @@
 
 ## GameObject中创建子对象
 
-```C#
+```cs
 var gameObject = new GameObject("New Game Object");
 gameObject.transform.parent = this.gameObject.transform;
 ```

@@ -2,7 +2,7 @@
 
 ## 代理（PROXY）
 
-```PowerShell
+```powershell
 # 设置proxy
 netsh winhttp set proxy http://localhost:8889
 # 取消proxy
@@ -13,6 +13,6 @@ netsh winhttp show proxy
 
 ## 查找命令版本及路径（与where(Win)、which(Linux)类似)
 
-```PowerShell
+```powershell
 Get-Command git
 ```
