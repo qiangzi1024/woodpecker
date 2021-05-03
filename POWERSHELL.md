@@ -16,3 +16,9 @@ netsh winhttp show proxy
 ```powershell
 Get-Command git
 ```
+
+## 遍历删除当前文件夹下的文件(cmd)
+
+```shell
+del /a /f /s /q  "*.meta"
+```
