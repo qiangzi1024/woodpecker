@@ -1,7 +1,7 @@
 <!--
  * @Author: Qiang
  * @Date: 2021-04-25 10:41:03
- * @LastEditTime: 2021-10-11 16:46:06
+ * @LastEditTime: 2021-10-11 17:16:47
  * @LastEditors: Qiang
  * @Description: 
  * @FilePath: \woodpecker\LINUX.md
@@ -37,4 +37,16 @@ Linux文本传到Windows一般少了一个换行；Windows传到Linux的文件�
 
 ```shell
 sed -i 's/$/\r/' filename　　#$表示行尾，整句意思是在行尾追加\r
+```
+
+## 多版本JDK切换
+
+```
+sudo update-alternatives --install /usr/bin/java java /usr/local/jvm/jdk1.7.0_80/bin/java 300
+
+sudo update-alternatives --install /usr/bin/javac javac /usr/local/jvm/jdk1.7.0_80/bin/javac 300
+
+update-alternatives --config java
+
+update-alternatives --config javac
 ```
